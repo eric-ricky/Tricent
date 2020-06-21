@@ -8,10 +8,10 @@ $(window).ready(function() {
         const top_2 = document.documentElement.scrollTop;
 
         if(top_1 > 80 || top_2 > 80) {
-            $(".navbar").css("padding", "0.07rem 1rem");
+            $(".navbar").css("padding", "0.05rem 1rem");
             $(".navbar").css("backgroundColor", "#555");
         } else {
-            $(".navbar").css("padding", "1.1rem 1rem");
+            $(".navbar").css("padding", ".3rem 1rem");
             $(".navbar").css("backgroundColor", "#555");
         }
     })
