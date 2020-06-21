@@ -73,16 +73,16 @@ section h5 {
     width: 100%;
     border-radius: 0%;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('http://www.tsmhst.com/images/slider/slide10.jpg');
+    url('img/tricent_1.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     color: aliceblue;
-    padding-top: 13rem;
+    padding-top: 9rem;
 }
 
 .jumbotron .header-1 {
-    margin-top: 3rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
     color: rgba(6, 255, 6, 0.9);
     font-size: 2rem;
@@ -94,7 +94,6 @@ section h5 {
 
 .jumbotron .txt-1 {
     margin-bottom: 3rem;
-    /* width: 600px; */
 }
 
 .jumbotron input {
