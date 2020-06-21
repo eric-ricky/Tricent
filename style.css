@@ -1,0 +1,276 @@
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.bg-grey {
+    background: rgb(223, 222, 222);
+}
+
+section h2 {
+    margin-top: 5.5rem;
+    padding-top: 4rem;
+}
+section h2::after {
+    content: '';
+    background-color: green;
+    width: 5rem;
+    height: 5px;
+    display: block;
+    margin: 2rem auto;
+    margin-top: 2rem;
+}
+section h5 {
+    margin-bottom: 3.5rem;
+}
+
+
+/* navigation */
+.navbar {
+    background-color: black;
+    font-size: 15px !important;
+    letter-spacing: 4px;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.42857143 !important;
+    padding: 1.1rem 1rem;    
+    transition: all 1000ms;
+}
+.nav-link {
+    margin: 0 0.2rem;
+    color: rgb(8, 245, 67);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.nav-link:hover {
+    color: rgb(20, 20, 20) !important;
+}
+
+
+/* menu button */
+.navbar button {
+    outline: 0em;
+    border: 0;
+}
+.navbar .btn-line {
+    width: 2rem;
+    height: .3rem;
+    background-color: #222;
+    margin: 0 0 .2rem 0;
+    transition: all 1000ms;
+}
+.close { transform: rotate(180deg);}
+.close .btn-line:nth-child(1) {transform: rotate(45deg) translate(5px, 5px);}
+.close .btn-line:nth-child(2) { opacity: 0;}
+.close .btn-line:nth-child(3) { transform: rotate(-45deg) translate(7px, -5px);}
+
+
+
+/* Showcase */
+.jumbotron {
+    width: 100%;
+    border-radius: 0%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('http://www.tsmhst.com/images/slider/slide10.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    padding-top: 13rem;
+}
+
+.jumbotron .header-1 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: rgba(6, 255, 6, 0.9);
+    font-size: 2rem;
+}
+
+.jumbotron .header-2 {
+    margin-bottom: 2rem;
+}
+
+.jumbotron .txt-1 {
+    margin-bottom: 3rem;
+    /* width: 600px; */
+}
+
+.jumbotron input {
+    margin-bottom: 3.5rem;
+}
+
+
+/* Section-1 -About Us */
+.section-1 .txt-1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.section-1 .txt-2 {
+    margin-bottom: 3.5rem;
+}
+.section-1 a {
+    margin-bottom: 5rem;
+}
+.section-1 img {
+    width: 95%;
+}
+
+
+/* section-2 -take action */
+.section-2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.pexels.com/photos/3834347/pexels-photo-3834347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(249, 255, 249);
+}
+.section-2 .header-1{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+}
+.section-2 a {
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+    background-color: green;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* .section-3 what we offer */
+
+.section-3 .card{
+    width: 20rem;
+    text-align: center;
+}
+.section-3 .card h6 {
+    margin: 1.5rem 0;
+}
+.section-3 .card:hover img {
+    opacity: .9;
+}
+
+
+/* section four */
+.section-4 img {
+    width: 200px;
+}
+.section-4 blockquote p {
+    margin: 0 auto;
+    color: rgba(0,0,0,0.9);
+}
+
+
+/* section-5 */
+.section-5 {
+    padding: 0 2rem;
+}
+.section-5 .row {
+    margin: 0 auto;
+}
+.section-5 img {
+    width: 90%;
+    transition: all 1000ms;
+}
+.section-5 img:hover {
+    opacity: .9;
+    transform: rotateY(180deg);
+}
+
+
+/* SECTION 6 */
+.section-6 form {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.section-6 i {
+    margin-right: 2rem;
+    transition: all 1000ms;
+}
+.section-6 i:hover {
+    color: green;
+    transform: rotateZ(360deg);
+}
+
+
+
+
+footer {
+    color: honeydew;
+}
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+    .jumbotron .header-1 {font-size: 1.2rem;}
+    .jumbotron .header-2 {font-size: 1.5rem;}
+    .jumbotron .txt-1 {font-size: .9rem;}
+
+    .section-1 {margin-bottom: 3rem;}
+    .section-1 .txt-1 {font-size: 1.2rem;}
+    .section-1 .txt-2 {font-size: 1rem;}
+
+    .section-2 .header-1 {font-size: 1.2rem;}
+    .section-2 a {font-size: 1.3rem;}
+
+    .section-3 .card {
+        width: 9rem;
+        margin-left: 25%;
+        margin-bottom: 2rem;
+    }
+    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
+    .section-3 .card h6 {font-size: .7; font-weight: 400;}
+
+    .section-6 form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .section-3 .card {
+        width: 11rem;        
+    }
+    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
+    .section-3 .card h6 {font-size: .7; font-weight: 400;}
+}
+
+@media only screen and (min-width: 768px) {
+    .section-3 .card {width: 13rem;}
+}
+
+@media only screen and (min-width: 992px) {
+    .section-3 .card {width: 17rem;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-3 .card {width: 20rem;}
+}
+
+
+
+/* ANIMATION */
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation: slide 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
