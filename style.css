@@ -6,6 +6,78 @@ body {
     font-size: 1rem;
 }
 
+/* SHOWCASE */
+.showcase {
+    animation: back-image 16s ease-out infinite;
+    width: 100%;
+}
+.carousel {
+    padding: 13rem 0 10rem 0;
+    text-align: center;
+    
+}
+.carousel .cv_1, .cv_2, .cv_3, .cv_4, .cv_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.carousel .header-1 {
+    margin-bottom: 1rem;
+    color: rgba(6, 255, 6, 0.9);
+    font-size: 2rem;
+}
+.carousel .header-2 {
+    color: wheat;
+    margin-bottom: 2rem;
+}
+.carousel .txt-1 {
+    color: white;
+    margin-bottom: 2rem;
+}
+.carousel input {
+    
+}
+
+@keyframes back-image {
+    0%,100%{
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+        url('img/cv_1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 1s;
+    }
+    25% {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+        url('img/cv_2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
+    }
+    50% {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+        url('img/grad_10.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
+    }
+    75% {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+        url('img/grad_12.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
+    }
+    
+}
+
+
+
+
+
+
 .bg-grey {
     background: rgb(223, 222, 222);
 }
@@ -24,7 +96,7 @@ section h2::after {
     margin-top: 2rem;
 }
 section h5 {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -69,36 +141,6 @@ section h5 {
 
 
 /* Showcase */
-.jumbotron {
-    width: 100%;
-    border-radius: 0%;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('img/tricent_1.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: aliceblue;
-    padding-top: 9rem;
-}
-
-.jumbotron .header-1 {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    color: rgba(6, 255, 6, 0.9);
-    font-size: 2rem;
-}
-
-.jumbotron .header-2 {
-    margin-bottom: 2rem;
-}
-
-.jumbotron .txt-1 {
-    margin-bottom: 3rem;
-}
-
-.jumbotron input {
-    margin-bottom: 3.5rem;
-}
 
 
 /* Section-1 -About Us */
