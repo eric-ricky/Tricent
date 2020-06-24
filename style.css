@@ -6,6 +6,67 @@ body {
     font-size: 1rem;
 }
 
+/* utilities */
+section h2 {
+    margin-top: 5.5rem;
+    padding-top: 4rem;
+}
+section h2::after {
+    content: '';
+    background-color: green;
+    width: 5rem;
+    height: 5px;
+    display: block;
+    margin: 2rem auto;
+    margin-top: 2rem;
+}
+section h5 {
+    margin-bottom: 2rem;
+}
+.bg-grey {
+    background: rgb(223, 222, 222);
+}
+
+
+/* NAVIGATION */
+.navbar {
+    background-color: black;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.42857143 !important;
+    padding: 1rem;    
+    transition: all 1000ms;
+}
+.nav-link {
+    margin: 0 0.2rem;
+    color: rgb(8, 245, 67);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.nav-link:hover {
+    color: rgb(20, 20, 20) !important;
+}
+.navbar button {
+    outline: 0em;
+    border: 0;
+}
+.navbar .btn-line {
+    width: 2rem;
+    height: .3rem;
+    background-color: #222;
+    margin: 0 0 .2rem 0;
+    transition: all 1000ms;
+}
+.close { transform: rotate(180deg);}
+.close .btn-line:nth-child(1) {transform: rotate(45deg) translate(5px, 5px);}
+.close .btn-line:nth-child(2) { opacity: 0;}
+.close .btn-line:nth-child(3) { transform: rotate(-45deg) translate(7px, -5px);}
+
+
+
+
+
 /* SHOWCASE */
 .carousel-inner .carousel-item {
     height: 100vh; 
@@ -18,7 +79,7 @@ body {
     height: 100vh;
 }
 .carousel-caption {
-    padding-bottom: 25rem;
+    padding-bottom: 8rem;
 }
 .carousel-caption h3 {
     color: rgb(247, 244, 244);
@@ -38,103 +99,120 @@ body {
     color: white;
 }
 
+
+/* ABOUT SECTION SECTION-2 */
+.section-2 .txt-1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.section-2 .txt-2 {
+    margin-bottom: 3.5rem;
+}
+.section-2 a {
+    margin-bottom: 5rem;
+}
+.section-2 img {
+    width: 95%;
+}
+
+
+/* PROGRAMS SECTION SECTION3 */
+.section-3 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('img/adult-biology-chemical-chemist-356040.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-3 .container-fluid .text-center {
+    color: white;
+}
+.section-3 .card {
+    width: 17rem;
+    text-align: center;
+}
+.section-3 .card h4 {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.section-3 .card:hover img {
+    opacity: .9;
+}
+
 @media only screen and (max-width: 600px) {
-    .carousel-caption {padding-bottom: 10rem;}
+    section h2 {font-size: rem;}
+
+    .carousel-caption {padding-bottom: 12rem;}
     .carousel-caption h3 {font-size: 2.3rem;}
+
+    .section-3 .card {
+        width: 13rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .section-3 .card h4 {
+        font-size: .9rem;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .carousel-caption {padding-bottom: 20rem;}
+
+    .section-3 .card {width: 12rem;}
+    .section-3 .card h4 { font-size: .9rem;}
+}
+@media only screen and (min-width: 768px) {
+    .section-3 .card {width: 13rem;}
+}
+@media only screen and (min-width: 992px) {
+    .section-3 .card {width: 17rem;}
+}
+@media only screen and (min-width: 1200px) {
+    .section-3 .card {width: 20rem;}
 }
 
 
 
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
-    .jumbotron .header-1 {font-size: 1.2rem;}
-    .jumbotron .header-2 {font-size: 1.5rem;}
-    .jumbotron .txt-1 {font-size: .9rem;}
-
-    .section-1 {margin-bottom: 3rem;}
+    /* .section-1 {margin-bottom: 3rem;}
     .section-1 .txt-1 {font-size: 1.2rem;}
-    .section-1 .txt-2 {font-size: 1rem;}
+    .section-1 .txt-2 {font-size: 1rem;} */
 
-    .section-2 .header-1 {font-size: 1.2rem;}
-    .section-2 a {font-size: 1.3rem;}
+    /* .section-2 .header-1 {font-size: 1.2rem;}
+    .section-2 a {font-size: 1.3rem;} */
 
-    .section-3 .card {
-        width: 9rem;
-        margin-left: 25%;
-        margin-bottom: 2rem;
-    }
-    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
-    .section-3 .card h6 {font-size: .7; font-weight: 400;}
+    
+    /* .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
+    .section-3 .card h6 {font-size: .7; font-weight: 400;} */
 
     .section-6 form {
         width: 100%;
     }
 }
+/* @media only screen and (min-width: 600px) {
+     .section-3 .card {
+        width: 11rem;        
+    }
+    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
+    .section-3 .card h6 {font-size: .7; font-weight: 400;} *
+} 
 
-
-
-
-
-
-.bg-grey {
-    background: rgb(223, 222, 222);
+@media only screen and (min-width: 768px) {
+    .section-3 .card {width: 13rem;}
 }
 
-section h2 {
-    margin-top: 5.5rem;
-    padding-top: 4rem;
-}
-section h2::after {
-    content: '';
-    background-color: green;
-    width: 5rem;
-    height: 5px;
-    display: block;
-    margin: 2rem auto;
-    margin-top: 2rem;
-}
-section h5 {
-    margin-bottom: 2rem;
+@media only screen and (min-width: 992px) {
+    .section-3 .card {width: 17rem;}
 }
 
+@media only screen and (min-width: 1200px) {
+    .section-3 .card {width: 20rem;}
+} */
 
-/* navigation */
-.navbar {
-    background-color: black;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    font-family: Montserrat, sans-serif;
-    line-height: 1.42857143 !important;
-    padding: 1rem;    
-    transition: all 1000ms;
-}
-.nav-link {
-    margin: 0 0.2rem;
-    color: rgb(8, 245, 67);
-    font-weight: bolder;
-    font-size: 1rem;
-}
-.nav-link:hover {
-    color: rgb(20, 20, 20) !important;
-}
 
 
 /* menu button */
-.navbar button {
-    outline: 0em;
-    border: 0;
-}
-.navbar .btn-line {
-    width: 2rem;
-    height: .3rem;
-    background-color: #222;
-    margin: 0 0 .2rem 0;
-    transition: all 1000ms;
-}
-.close { transform: rotate(180deg);}
-.close .btn-line:nth-child(1) {transform: rotate(45deg) translate(5px, 5px);}
-.close .btn-line:nth-child(2) { opacity: 0;}
-.close .btn-line:nth-child(3) { transform: rotate(-45deg) translate(7px, -5px);}
 
 
 
@@ -142,29 +220,14 @@ section h5 {
 
 
 /* Section-1 -About Us */
-.section-1 .txt-1 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-.section-1 .txt-2 {
-    margin-bottom: 3.5rem;
-}
-.section-1 a {
-    margin-bottom: 5rem;
-}
-.section-1 img {
-    width: 95%;
-}
+
 
 
 /* section-2 -take action */
 .section-2 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('https://images.pexels.com/photos/3834347/pexels-photo-3834347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    
     background-size: cover;
-    color: rgb(249, 255, 249);
+    
 }
 .section-2 .header-1{
     margin: 0 auto;
@@ -180,18 +243,6 @@ section h5 {
 }
 
 
-/* .section-3 what we offer */
-
-.section-3 .card{
-    width: 20rem;
-    text-align: center;
-}
-.section-3 .card h6 {
-    margin: 1.5rem 0;
-}
-.section-3 .card:hover img {
-    opacity: .9;
-}
 
 
 /* section four */
@@ -247,25 +298,6 @@ footer {
 
 
 
-@media only screen and (min-width: 600px) {
-    .section-3 .card {
-        width: 11rem;        
-    }
-    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
-    .section-3 .card h6 {font-size: .7; font-weight: 400;}
-}
-
-@media only screen and (min-width: 768px) {
-    .section-3 .card {width: 13rem;}
-}
-
-@media only screen and (min-width: 992px) {
-    .section-3 .card {width: 17rem;}
-}
-
-@media only screen and (min-width: 1200px) {
-    .section-3 .card {width: 20rem;}
-}
 
 
 
