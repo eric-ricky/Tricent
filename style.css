@@ -7,8 +7,23 @@ body {
 }
 
 /* utilities */
+.topBtn {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: green;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 12rem;
+    font-size: 1rem;
+    font-family: serif;
+    display: inline-block;
+    z-index: 1;
+}
+.topBtn:hover {
+    opacity: .9;
+}
 section h2 {
-    margin-top: 5.5rem;
     padding-top: 4rem;
 }
 section h2::after {
@@ -68,7 +83,7 @@ section h5 {
 
 
 /* SHOWCASE */
-.carousel-inner .carousel-item {
+.section-1 .carousel-inner .carousel-item {
     height: 100vh; 
     color: #222;   
 }
@@ -78,19 +93,19 @@ section h5 {
     background-repeat: no-repeat;
     height: 100vh;
 }
-.carousel-caption {
-    padding-bottom: 8rem;
+.section-1 .carousel-caption {
+    padding-bottom: 10rem;
 }
-.carousel-caption h3 {
+.section-1 .carousel-caption h3 {
     color: rgb(247, 244, 244);
     font-size: 3.7rem;
     text-transform: uppercase;
     font-weight: bold;
 }
-.carousel-caption h3 span {
+.section-1 .carousel-caption h3 span {
     color: rgb(1, 82, 1);
 } 
-.carousel-caption a {
+.section-1 .carousel-caption a {
     background-color: rgb(19, 241, 11);
     padding: .5rem 1rem;
     display: inline-block;
@@ -140,11 +155,42 @@ section h5 {
     opacity: .9;
 }
 
+/* OUR STAFF SECTION SECTION-4*/
+.section-4 .img img {
+    width: 200px;
+}
+
+
+/* TESTOMONIALS SECTION SECTION-5 */
+.section-5 img {
+    width: 100px;
+    margin-bottom: 2rem;
+}
+
+/* HOW TO ENROLL SECTION SECTION-6 */
+.section-6 .row {
+    width: 100%;
+}
+.section-6 .p1 {
+    background: url('');
+}
+.section-6 .p2 {
+    background: rgb(157, 243, 193);
+    padding: 7rem 0;
+}
+
+/* FOOTER SECTION */
+footer i {
+    padding-right: 3rem;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     section h2 {font-size: rem;}
 
-    .carousel-caption {padding-bottom: 12rem;}
-    .carousel-caption h3 {font-size: 2.3rem;}
+    .section-1 .carousel-caption {padding-bottom: 12rem;}
+    .section-1 .carousel-caption h3 {font-size: 2.3rem;}
 
     .section-3 .card {
         width: 13rem;
@@ -156,7 +202,7 @@ section h5 {
     }
 }
 @media only screen and (min-width: 600px) {
-    .carousel-caption {padding-bottom: 20rem;}
+    .section-1 .carousel-caption {padding-bottom: rem;}
 
     .section-3 .card {width: 12rem;}
     .section-3 .card h4 { font-size: .9rem;}
@@ -213,50 +259,20 @@ section h5 {
 
 
 /* menu button */
-
-
-
 /* Showcase */
-
-
 /* Section-1 -About Us */
-
-
-
 /* section-2 -take action */
-.section-2 {
-    
-    background-size: cover;
-    
-}
-.section-2 .header-1{
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    padding-top: 3rem;
-}
-.section-2 a {
-    margin-bottom: 2rem;
-    padding: .5rem 1rem;
-    background-color: green;
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-
-
 /* section four */
 .section-4 img {
     width: 200px;
 }
-.section-4 blockquote p {
+/*.section-4 blockquote p {
     margin: 0 auto;
     color: rgba(0,0,0,0.9);
-}
-
+} */
 
 /* section-5 */
-.section-5 {
+/* .section-5 {
     padding: 0 2rem;
 }
 .section-5 .row {
@@ -269,7 +285,7 @@ section h5 {
 .section-5 img:hover {
     opacity: .9;
     transform: rotateY(180deg);
-}
+} */
 
 
 /* SECTION 6 */
