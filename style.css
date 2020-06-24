@@ -7,70 +7,68 @@ body {
 }
 
 /* SHOWCASE */
-.showcase {
-    animation: back-image 16s ease-out infinite;
-    width: 100%;
+.carousel-inner .carousel-item {
+    height: 100vh; 
+    color: #222;   
 }
-.carousel {
-    padding: 13rem 0 10rem 0;
-    text-align: center;
-    
+.banner {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
-.carousel .cv_1, .cv_2, .cv_3, .cv_4, .cv_5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.carousel-caption {
+    padding-bottom: 25rem;
 }
-.carousel .header-1 {
-    margin-bottom: 1rem;
-    color: rgba(6, 255, 6, 0.9);
-    font-size: 2rem;
+.carousel-caption h3 {
+    color: rgb(247, 244, 244);
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-.carousel .header-2 {
-    color: wheat;
-    margin-bottom: 2rem;
-}
-.carousel .txt-1 {
+.carousel-caption h3 span {
+    color: rgb(1, 82, 1);
+} 
+.carousel-caption a {
+    background-color: rgb(19, 241, 11);
+    padding: .5rem 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 25px;
     color: white;
-    margin-bottom: 2rem;
-}
-.carousel input {
-    
 }
 
-@keyframes back-image {
-    0%,100%{
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
-        url('img/cv_1.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        transition: all 1s;
+@media only screen and (max-width: 600px) {
+    .carousel-caption {padding-bottom: 10rem;}
+    .carousel-caption h3 {font-size: 2.3rem;}
+}
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+    .jumbotron .header-1 {font-size: 1.2rem;}
+    .jumbotron .header-2 {font-size: 1.5rem;}
+    .jumbotron .txt-1 {font-size: .9rem;}
+
+    .section-1 {margin-bottom: 3rem;}
+    .section-1 .txt-1 {font-size: 1.2rem;}
+    .section-1 .txt-2 {font-size: 1rem;}
+
+    .section-2 .header-1 {font-size: 1.2rem;}
+    .section-2 a {font-size: 1.3rem;}
+
+    .section-3 .card {
+        width: 9rem;
+        margin-left: 25%;
+        margin-bottom: 2rem;
     }
-    25% {
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
-        url('img/cv_2.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover
+    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
+    .section-3 .card h6 {font-size: .7; font-weight: 400;}
+
+    .section-6 form {
+        width: 100%;
     }
-    50% {
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
-        url('img/grad_10.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover
-    }
-    75% {
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
-        url('img/grad_12.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover
-    }
-    
 }
 
 
@@ -103,11 +101,11 @@ section h5 {
 /* navigation */
 .navbar {
     background-color: black;
-    font-size: 15px !important;
+    font-size: 11px !important;
     letter-spacing: 4px;
     font-family: Montserrat, sans-serif;
     line-height: 1.42857143 !important;
-    padding: .3rem 1rem;    
+    padding: 1rem;    
     transition: all 1000ms;
 }
 .nav-link {
@@ -247,31 +245,7 @@ footer {
 
 
 
-/* RESPONSIVE */
-@media only screen and (max-width: 600px) {
-    .jumbotron .header-1 {font-size: 1.2rem;}
-    .jumbotron .header-2 {font-size: 1.5rem;}
-    .jumbotron .txt-1 {font-size: .9rem;}
 
-    .section-1 {margin-bottom: 3rem;}
-    .section-1 .txt-1 {font-size: 1.2rem;}
-    .section-1 .txt-2 {font-size: 1rem;}
-
-    .section-2 .header-1 {font-size: 1.2rem;}
-    .section-2 a {font-size: 1.3rem;}
-
-    .section-3 .card {
-        width: 9rem;
-        margin-left: 25%;
-        margin-bottom: 2rem;
-    }
-    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
-    .section-3 .card h6 {font-size: .7; font-weight: 400;}
-
-    .section-6 form {
-        width: 100%;
-    }
-}
 
 @media only screen and (min-width: 600px) {
     .section-3 .card {
