@@ -182,7 +182,7 @@ section h5 {
     padding: 3rem 0;
 }
 .section-6 .p2 h4 {
-    width: 20rem;
+    width: 45%;
     margin: 0 auto;
 }
 .section-6 .p2 form {
@@ -375,9 +375,15 @@ footer {
     border-radius: 25px;
     color: white;
 }
+@media only screen and (max-width: 600px) {
+    .section-1-about .jumbotron {
+        padding-top: 6.5rem;
+    }
+}
 
 
 /* Mission statement section */
 .section-2 .desc {
-    margin: 0 15rem;
+    padding: 0 15%;
 }
+
