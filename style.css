@@ -41,11 +41,19 @@ section h5 {
 .bg-grey {
     background: rgb(223, 222, 222);
 }
+.card .inner {
+    overflow: hidden;
+}
+.card .inner img {
+    transition: all 1s ease;
+}
+.card:hover img {
+    transform: scale(1.5);
+}
 
 
 /* NAVIGATION */
 .navbar {
-    background-color: black;
     font-size: 11px !important;
     letter-spacing: 4px;
     font-family: Montserrat, sans-serif;
@@ -151,9 +159,7 @@ section h5 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-.section-3 .card:hover img {
-    opacity: .9;
-}
+
 
 /* OUR STAFF SECTION SECTION-4*/
 .section-4 .img img {
@@ -176,6 +182,15 @@ section h5 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.section-6 .p1 div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+.section-6 .p1 div {
+    padding-top: 10rem !important;
 }
 .section-6 .p2 {
     background: rgb(157, 243, 193);
@@ -367,7 +382,7 @@ footer {
     background-position: center;
     color: white;
 }
-.section-1-about .jumbotron a {
+.jumbotron a {
     background-color: rgb(19, 241, 11);
     padding: .5rem 1rem;
     display: inline-block;
@@ -376,14 +391,26 @@ footer {
     color: white;
 }
 @media only screen and (max-width: 600px) {
-    .section-1-about .jumbotron {
+    .jumbotron {
         padding-top: 6.5rem;
     }
 }
-
 
 /* Mission statement section */
 .section-2 .desc {
     padding: 0 15%;
 }
 
+/* ========================================================= */
+/* COURCES PAGE */
+/* ========================================================= */
+.section-1-courses .jumbotron {
+    height: 60vh;
+    width: 100%;
+    padding-top: 10rem;
+    background-image: url('img/cv_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
