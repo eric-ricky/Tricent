@@ -146,39 +146,44 @@ section p {
 
 /* NAVIGATION */
 .navbar {
-    font-size: 11px !important;
+    font-size: 1rem !important;
     letter-spacing: 4px;
     font-family: Montserrat, sans-serif;
-    line-height: 1.42857143 !important;
-    padding: 1rem;    
+    line-height: 1.42857143 !important;   
     transition: all 1000ms;
 }
 .nav-link {
-    margin: 0 0.2rem;
-    color: rgb(8, 245, 67);
+    color: rgb(8, 245, 67) !important;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin: 0 .3rem;
 }
 .nav-link:hover {
-    color: rgb(20, 20, 20) !important;
+    color: rgba(44, 250, 2, .5) !important;
 }
 .navbar button {
     outline: 0em;
     border: 0;
 }
-.navbar .btn-line {
+.navbar-toggler .btn-line {
     width: 2rem;
     height: .3rem;
-    background-color: #222;
+    background-color: white;
     margin: 0 0 .2rem 0;
     transition: all 1000ms;
 }
-.close { transform: rotate(180deg);}
-.close .btn-line:nth-child(1) {transform: rotate(45deg) translate(5px, 5px);}
-.close .btn-line:nth-child(2) { opacity: 0;}
-.close .btn-line:nth-child(3) { transform: rotate(-45deg) translate(7px, -5px);}
+.navbar-toggler.close { transform: rotate(180deg);}
+.navbar-toggler.close .btn-line:nth-child(1) {transform: rotate(45deg) translate(5px, 5px);}
+.navbar-toggler.close .btn-line:nth-child(2) { opacity: 0;}
+.navbar-toggler.close .btn-line:nth-child(3) { transform: rotate(-45deg) translate(7px, -5px);}
 
-
+.bg-transparent {
+    background: rgba(0,0,0,0.3) !important;
+}
+.bg-transparent.scrolled {
+    background: white !important;
+    padding: .1rem initial;
+}
 
 
 
