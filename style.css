@@ -95,6 +95,7 @@ body {
 
 /* utilities */
 .topBtn {
+    display: none !important;
     position: fixed;
     bottom: 1rem;
     right: 2rem;
@@ -105,10 +106,13 @@ body {
     font-size: 1rem;
     font-family: serif;
     display: inline-block;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .topBtn:hover {
     opacity: .9;
+}
+.topBtn.scrolled-top{
+    display: block !important;
 }
 section h2 {
     font-family: 'Oswald', sans-serif;
@@ -149,14 +153,17 @@ section p {
     font-size: 1rem !important;
     letter-spacing: 4px;
     font-family: Montserrat, sans-serif;
-    line-height: 1.42857143 !important;   
+    line-height: 1.42857143 !important;
     transition: all 1000ms;
+    padding: 0;
 }
+
 .nav-link {
     color: rgb(8, 245, 67) !important;
     font-weight: bolder;
     font-size: 1.2rem;
     margin: 0 .3rem;
+    padding: 0;
 }
 .nav-link:hover {
     color: rgba(44, 250, 2, .5) !important;
