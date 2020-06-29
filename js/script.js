@@ -5,7 +5,7 @@ $(window).ready(function() {
 
     $(window).scroll(function() {
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
-        $('topBtn'.toggleClass('scrolled-top', $(this).scrollTop() > 250));
+        $('topBtn').toggleClass('scrolled-top', $(this).scrollTop() > 250);
     });
     $(window).scroll(function() {
 
