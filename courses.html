@@ -85,28 +85,18 @@
                     <h5 class="header-2">Intellectual Destination</h5>
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-3">
-                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                            DEPARTMENT OF HEALTH SCIENCES
-                        </a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                            DEPARTMENT OF SOCIAL SCIENCES
-                        </a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                            DEPARTMENT OF APPLIED SCIENCES
-                        </a>
-                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                            DEPARTMENT OF BUSINESS & INFORMATICS
-                        </a>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                            <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                DEPARTMENT OF HEALTH SCIENCES
+                            </a>
+                        </h3>
                       </div>
-                    </div>
-
-                    <!-- pills content -->
-                    <div class="col-sm-9">
-                      <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="card">
@@ -330,9 +320,23 @@
                                 </div>                                                           
                             </div>
                         </div>
-                        <!-- End of health sciences -->
+                      </div>
+                    </div>
+                    <!-- End of health sciences -->
 
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h3 class="mb-0">
+                            <a class="btn btn-link btn-block text-left" 
+                            type="button" data-toggle="collapse" data-target="#collapseTwo" 
+                            aria-expanded="true" aria-controls="collapseOne">
+                                DEPARTMENT OF SOCIAL SCIENCES
+                            </a>
+                        </h3>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="card">
@@ -434,11 +438,25 @@
                                         </div>
                                     </div>
                                 </div>                               
-                            </div>            
+                            </div> 
                         </div>
-                        <!-- End of social sciences -->
+                      </div>
+                    </div>
+                    <!-- End of social sciences -->
 
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h3 class="mb-0">
+                            <a class="btn btn-link btn-block text-left" 
+                            type="button" data-toggle="collapse" data-target="#collapseThree" 
+                            aria-expanded="true" aria-controls="collapseOne">
+                                DEPARTMENT OF APPLIED SCIENCES
+                            </a>
+                        </h3>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="card">
@@ -488,11 +506,25 @@
                                         </div>
                                     </div>
                                 </div>                                
-                            </div>       
+                            </div>
                         </div>
-                        <!-- End of applied sciences -->
+                      </div>
+                    </div>
+                    <!-- End of applied sciences -->
 
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h3 class="mb-0">
+                            <a class="btn btn-link btn-block text-left" 
+                            type="button" data-toggle="collapse" data-target="#collapseFour" 
+                            aria-expanded="true" aria-controls="collapseOne">
+                                DEPARTMENT OF BUSINESS & INFORMATICS
+                            </a>
+                        </h3>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="card">
@@ -612,10 +644,9 @@
                                 </div>                               
                             </div>
                         </div>
-                        <!-- End of business and informatics -->
-
                       </div>
                     </div>
+                    <!-- End of business and informatics -->
                 </div>
             </div>
         </section>
