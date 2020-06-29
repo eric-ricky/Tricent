@@ -592,11 +592,11 @@ footer {
     background-position: center;
     color: white;
 }
-.section-2 .tab-content .card p{
+.section-2 .card-body p{
     font-size: 1rem;
     font-weight: bold;
 }
-.section-2 .nav-pills a {
+.section-2 .card a {
     font-size: .8rem;
     margin-bottom: 2rem;
 }
