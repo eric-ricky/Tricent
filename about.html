@@ -13,6 +13,9 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
+    <!-- animate css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
     <!-- ==================== -->
 
     <!-- custom style -->
@@ -49,7 +52,9 @@
                         <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Enroll</a>
+                        <a href="#exampleModal" 
+                        type="button"  data-toggle="modal"
+                        class="nav-link">Enroll</a>
                     </li>
               </ul>
             </div>
@@ -65,18 +70,66 @@
         <section class="section-1-about">
             <div class="jumbotron">
                 <div class="container-fluid text-center">
-                    <h3>Welcome To <span>TSMHST</span></h3>
-                    <h6>
+                    <h3 class="animate__animated animate__bounceInRight"
+                    style="animation-delay: 1s;">Welcome To <span>TSMHST</span></h3>
+                    
+                    <h6 class="animate__animated animate__bounceInLeft"
+                    style="animation-delay: 2s;">
                         A place of learning , discovery, innovation, expression, and discourse
                         We offer an outstanding and comprehensive array of programs
                     </h6>
-                    <a href="#">Contact Us</a>        
+                    <p class="animate__animated animate__bounceInRight" style="animation-delay: 3s;">
+                        <a href="#exampleModal" type="button"  data-toggle="modal">
+                            Enroll
+                        </a>
+                    </p>        
                 </div>
             </div>
         </section>
         <!-- End of section -->
         <!-- =================== -->
 
+        <!-- MODAL  -->
+        <section>            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        WELCOME TO TSMHST
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row py-5">
+                                <div class="col-sm-3">
+                                    <img 
+                                    src="img/tricent_logo.png" 
+                                    alt="my image" 
+                                    class="img-responsive img-circle"
+                                    width="250px" height="200px"
+                                    style="display: inline;">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Click on the link below to download the admision letter</h5>
+                                    <a class="btn btn-primary" href="PAPAYA.pdf">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of section -->
+        <!-- =================== -->
 
         <!-- ABOUT SECTION SECTION2 -->
         <section class="section-2" id="about">

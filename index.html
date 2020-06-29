@@ -13,6 +13,9 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- animate css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
     <!-- ==================== -->
 
     <!-- custom style -->
@@ -49,7 +52,9 @@
                         <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Enroll</a>
+                        <a href="#exampleModal" 
+                        type="button"  data-toggle="modal"
+                        class="nav-link">Enroll</a>
                     </li>
               </ul>
             </div>
@@ -80,48 +85,74 @@
                     <div class="banner" 
                     style="background-image: url('img/cv_1.jpg');"></div>
                     <div class="carousel-caption d-md-block">
-                        <h3>Welcome To <span>TSMHST</span></h3>
-                        <h6>
+                        <h3 class="animate__animated animate__bounceInRight"
+                        style="animation-delay: 1s;">Welcome To <span>TSMHST</span></h3>
+                        <h6 class="animate__animated animate__bounceInLeft" 
+                        style="animation-delay: 2s;">
                             A place of learning , discovery, innovation, expression, and discourse
                             We offer an outstanding and comprehensive array of programs
                         </h6>
-                        <a href="#">Contact Us</a>
+                        <p class="animate__animated animate__bounceInRight" style="animation-delay: 3s;">
+                            <a href="#exampleModal" type="button"  data-toggle="modal">
+                                Enroll
+                            </a>
+                        </p>
                     </div>              
                 </div>
                 <div class="carousel-item">
                     <div class="banner" 
                     style="background-image: url('img/cv_3.jpg');"></div>
                     <div class="carousel-caption d-md-block">
-                        <h3>An Intellectual <span>Destination</span></h3>
-                        <h6>Unconventional Minds Are Built for Uncertain Days</h6>
-                        <a href="#">Contact Us</a>
+                        <h3 class="animate__animated animate__fadeInDownBig" 
+                        style="animation-delay: 1s;">An Intellectual <span>Destination</span></h3>
+                        <h6 class="animate__animated animate__fadeInUp" style="animation-delay: 2s;">Unconventional Minds Are Built for Uncertain Days</h6>
+                        <p class="animate__animated animate__zoomIn" style="animation-delay: 3s;">
+                            <a href="#exampleModal" type="button"  data-toggle="modal">
+                                Enroll
+                            </a>
+                        </p>
                     </div>              
                 </div>
                 <div class="carousel-item">
                     <div class="banner" 
                     style="background-image: url('img/staff_8.jpg');"></div>
                     <div class="carousel-caption d-md-block">
-                        <h3>Highly Competent <span> Staff Members</span></h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        <a href="#">Contact Us</a>
+                        <h3 class="animate__animated animate__zoomIn" 
+                        style="animation-delay: 1s;">Highly Competent <span> Staff</span></h3>
+                        <p class="animate__animated animate__fadeInLeft" style="animation-delay: 2s;">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <p class="animate__animated animate__bounceInRight" style="animation-delay: 3s;">
+                            <a href="#exampleModal" type="button"  data-toggle="modal">
+                                Enroll
+                            </a>
+                        </p>
                     </div>              
                 </div>
                 <div class="carousel-item">
                     <div class="banner" 
-                    style="background-image: url('img/grad_15.jpg');"></div>
+                    style="background-image: url('img/grad_2.jpg');"></div>
                     <div class="carousel-caption d-md-block">
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        <a href="#">Contact Us</a>
+                        <h3 class="animate__animated animate__lightSpeedInLeft"
+                        style="animation-delay: 1s;">Welcome To <span>TSMHST</span></h3>
+                        <p class="animate__animated animate__bounceInRight" style="animation-delay: 2s;">An Intellectual Destination</p>
+                        <p class="animate__animated animate__lightSpeedInLeft" style="animation-delay: 3s;">
+                            <a href="#exampleModal" type="button"  data-toggle="modal">
+                                Enroll
+                            </a>
+                        </p>
                     </div>              
                 </div>
                 <div class="carousel-item">
                     <div class="banner" 
                     style="background-image: url('img/grad_17.jpg');"></div>
                     <div class="carousel-caption d-md-block">
-                        <h3>More Than <span>Academics</span></h3>
-                        <h6>Besides Providing Knowledge in respective fieldss</h6>
-                        <a href="#">Contact Us</a>
+                        <h3 class="animate__animated animate__zoomInUp"
+                        style="animation-delay: 1s;">More Than <span>Academics</span></h3>
+                        <h6 class="animate__animated animate__flipInY" style="animation-delay: 2s;">Besides Providing Knowledge in respective fieldss</h6>
+                        <p class="animate__animated animate__fadeInBottomRight" style="animation-delay: 3s;">
+                            <a href="#exampleModal" type="button"  data-toggle="modal">
+                                Enroll
+                            </a>
+                        </p>
                     </div>              
                 </div>
                 </div>
@@ -135,6 +166,48 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+            </div>
+        </section>
+        <!-- End of section -->
+        <!-- =================== -->
+
+        <!-- MODAL  -->
+        <section>            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        WELCOME TO TSMHST
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row py-5">
+                                <div class="col-sm-3">
+                                    <img 
+                                    src="img/tricent_logo.png" 
+                                    alt="my image" 
+                                    class="img-responsive img-circle"
+                                    width="250px" height="200px"
+                                    style="display: inline;">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Click on the link below to download the admision letter</h5>
+                                    <a class="btn btn-primary" href="PAPAYA.pdf">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
             </div>
         </section>
         <!-- End of section -->
