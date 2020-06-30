@@ -162,12 +162,15 @@ section p {
     margin: 1.3rem 0;
 }
 .nav-link {
-    color: #edbb00 !important;
+    color: rgb(3, 194, 3) !important;
     text-transform: uppercase;
     font-weight: bolder;
 }
+.nav-item.active .nav-link {
+    color: #edbb00 !important;
+}
 .nav-link:hover {
-    color: rgba(44, 250, 2, .5) !important;
+    color: #edbb00 !important;
 }
 .navbar button {
     outline: 0em;
@@ -276,7 +279,7 @@ section p {
 /* PROGRAMS SECTION SECTION3 */
 .section-3 {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('../img/adult-biology-chemical-chemist-356040.jpg');
+    url('https://scontent.fnbo2-1.fna.fbcdn.net/v/t31.0-8/p720x720/15974887_218051701989977_7166510719835565384_o.jpg?_nc_cat=104&_nc_sid=dd9801&_nc_ohc=6-iZqT_vd8wAX_o2JTu&_nc_ht=scontent.fnbo2-1.fna&_nc_tp=6&oh=eac9a67a0a034d5012ff4edc25f1fdd4&oe=5F214F47');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,19 +320,34 @@ section p {
 
 
 /* TESTOMONIALS SECTION SECTION-5 */
-.section-5 img {
-    width: 100px;
-    margin-bottom: 2rem;
+.section-5 {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)),
+    url('https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-0/p640x640/65928788_2463074820422372_8339965219040133120_o.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_ohc=8K_xjwWVznwAX8e5jF_&_nc_ht=scontent.fnbo2-1.fna&_nc_tp=6&oh=8f1456a7a73a25fe4110cb950c9edccc&oe=5F1F3942');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(12);
 }
-.bg-grey {
-    background-color: #555 !important;
+.section-5 .container-fluid .text-center {
+    color: white;
 }
+.section-5 .blockquote h6 {
+    color: rgb(224, 219, 219);
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.7 !important;
+    margin: 0;
+    padding: 0 7rem !important;
+}
+
 .section-5 .carousel-items {
     padding: 2rem 0;
    
 }
 
-/* HOW TO ENROLL SECTION SECTION-6 */
+/* CONTACT US SECTION SECTION-6 */
 .section-6 .row {
     width: 100%;
 }
@@ -427,6 +445,10 @@ footer .icons a {
         font-size: .9rem;
     }
 
+    .section-5 .blockquote h6 {
+        padding: 0 !important;
+    }
+
     .section-6 form {
         width: 100%;
     }
@@ -444,6 +466,9 @@ footer .icons a {
 }
 @media only screen and (min-width: 992px) {
     .section-3 .card {width: 17rem;}
+    .navbar{
+        background-color: rgba(0,0,0,0.5) !important;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .section-3 .card {width: 20rem;}
@@ -489,15 +514,16 @@ footer .icons a {
     height: 60vh;
     width: 100%;
     padding-top: 9rem;
-    background-image: url('https://images.pexels.com/photos/586570/pexels-photo-586570.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+    url('https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-0/p480x480/83002388_2881563828573467_4802006043766816768_o.jpg?_nc_cat=106&_nc_sid=110474&_nc_ohc=bTmCvCB-qngAX_4e1xa&_nc_ht=scontent.fnbo2-1.fna&_nc_tp=6&oh=db9e051865c099cd296fa06de16e4212&oe=5F208E6F');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #ddd;
 }
 .jumbotron {border-radius: 0 !important;}
 .jumbotron h3 {
-    color: rgb(247, 244, 244);
+    color: #eee;
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -518,6 +544,13 @@ footer .icons a {
     .jumbotron h3 {
         font-size: 1.8rem;
     }
+}
+
+.section-2#about h6 {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .section-4.our-team {
@@ -550,8 +583,14 @@ footer .icons a {
     box-shadow: 5px 5px 8px rgba(0,0,0,0.5), 
     10px 10px 8px rgba(0,0,0,0.5), 15px 15px 8px rgba(0,0,0,0.5);
 }
-.team .team_member h3{
-    font-size: 26px;
+.team .team_member h5{
+    font-size: 1.2rem;
+    font-family: Georgia, serif;
+    font-style: oblique;
+}
+.team .team_member h6 {
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 .team .team_member .team_img{
     position: absolute;
