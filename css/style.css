@@ -184,10 +184,10 @@ section p {
 .navbar-toggler.close .btn-line:nth-child(1) {transform: rotate(45deg) translate(5px, 5px);}
 .navbar-toggler.close .btn-line:nth-child(2) { opacity: 0;}
 .navbar-toggler.close .btn-line:nth-child(3) { transform: rotate(-45deg) translate(7px, -5px);}
-
-/* .bg-transparent {
-    background: rgba(0,0,0,0.3) !important;
-} */
+ .navbar-collapse.show .navbar-nav {
+     background: rgba(0,0,0,0.3);
+     padding-left: 1.2rem;
+ }
 .bg-transparent.scrolled {
     background: white !important;
     padding: 1.1rem 1rem;
@@ -376,6 +376,9 @@ section p {
 
 
 /* FOOTER SECTION */
+footer {
+    color: honeydew;
+}
 footer p {
     font-size: .7rem;
 }
@@ -405,14 +408,7 @@ footer .icons a {
 }
 .youtube {
     color: #bb0000;
-} 
-  
-  
-  
-  
-  
-  
-
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -428,6 +424,10 @@ footer .icons a {
     }
     .section-3 .card h4 {
         font-size: .9rem;
+    }
+
+    .section-6 form {
+        width: 100%;
     }
 
     footer .icons a {font-size: 1.3rem;}
@@ -450,96 +450,12 @@ footer .icons a {
 
 
 
-/* RESPONSIVE */
-@media only screen and (max-width: 600px) {
-    /* .section-1 {margin-bottom: 3rem;}
-    .section-1 .txt-1 {font-size: 1.2rem;}
-    .section-1 .txt-2 {font-size: 1rem;} */
-
-    /* .section-2 .header-1 {font-size: 1.2rem;}
-    .section-2 a {font-size: 1.3rem;} */
-
-    
-    /* .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
-    .section-3 .card h6 {font-size: .7; font-weight: 400;} */
-
-    .section-6 form {
-        width: 100%;
-    }
-}
-/* @media only screen and (min-width: 600px) {
-     .section-3 .card {
-        width: 11rem;        
-    }
-    .section-3 .card h5 {font-size: .9rem; font-weight: bolder;}
-    .section-3 .card h6 {font-size: .7; font-weight: 400;} *
-} 
-
-@media only screen and (min-width: 768px) {
-    .section-3 .card {width: 13rem;}
-}
-
-@media only screen and (min-width: 992px) {
-    .section-3 .card {width: 17rem;}
-}
-
-@media only screen and (min-width: 1200px) {
-    .section-3 .card {width: 20rem;}
-} */
-
-
-
-/* menu button */
-/* Showcase */
-/* Section-1 -About Us */
-/* section-2 -take action */
-/* section four */
-.section-4 img {
-    width: 200px;
-}
-/*.section-4 blockquote p {
-    margin: 0 auto;
-    color: rgba(0,0,0,0.9);
-} */
-
-/* section-5 */
-/* .section-5 {
-    padding: 0 2rem;
-}
-.section-5 .row {
-    margin: 0 auto;
-}
-.section-5 img {
-    width: 90%;
-    transition: all 1000ms;
-}
-.section-5 img:hover {
-    opacity: .9;
-    transform: rotateY(180deg);
-} */
-
-
-/* SECTION 6 */
-
-
-
-
-
-
-footer {
-    color: honeydew;
-}
-
-
-
-
-
-
 
 
 /* ANIMATION */
 .slideanim {
     visibility: hidden;
+    transition: ease;
 }
 
 .slide {
