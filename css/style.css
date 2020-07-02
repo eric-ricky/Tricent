@@ -158,6 +158,10 @@ section p {
     transition: all 1000ms;
     padding: 0;
 }
+.navbar .navbar-brand img {
+    font-size: 5rem;
+    width: 140px;
+}
 .navbar .navbar-nav {
     margin: 1.3rem 0;
 }
@@ -445,6 +449,12 @@ footer .icons a {
 .linkedin {
     color: #007bb5;    
 }
+.youtube {
+    color: #c4302b;
+}
+.instagram {
+    color: #3f729b;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -528,7 +538,7 @@ footer .icons a {
 
 /* Showcase section-1-about */
 .section-1-about .jumbotron {
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     padding-top: 9rem;
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
@@ -671,4 +681,49 @@ footer .icons a {
         font-size: .9rem;
         text-align: center;
     }
+}
+
+/* ========================================================= */
+/* APPLY PAGE */
+/* ========================================================= */
+body.apply-body {
+    background: lightgreen !important;
+}
+.section-apply {
+    margin-top: 10rem !important;
+}
+.section-apply .container {
+    display: flex;
+    justify-content: center !important;
+    margin-bottom: 3rem;
+}
+.section-apply .container .contactform {
+    padding: 70px 55px;
+    background: #fff;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+.section-apply .container .contactform h6 {
+    margin: 2rem 0;
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(150, 12, 12);
+}
+.section-apply .container .contactform h3 {
+    font-size: 1.3rem;
+} 
+.section-apply .container .contactform ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 0 !important;
+    text-align: start;
+}
+.section-apply .container .contactform ul li {
+    font-family: serif;
+    font-size: 1.5rem;
+}
+.section-apply .container .contactform .btn {
+    background-color: rgb(150, 12, 12);
+    margin: 0 auto;
 }
