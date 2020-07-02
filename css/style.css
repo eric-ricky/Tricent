@@ -714,7 +714,7 @@ body.apply-body {
     font-size: 1.3rem;
 } 
 .section-apply .container .contactform ul {
-    list-style: none;
+    list-style: square;
     margin: 1rem 0;
     padding-left: 0 !important;
     text-align: start;
@@ -722,6 +722,7 @@ body.apply-body {
 .section-apply .container .contactform ul li {
     font-family: serif;
     font-size: 1.5rem;
+    margin-bottom: .5rem;
 }
 .section-apply .container .contactform .btn {
     background-color: rgb(150, 12, 12);
